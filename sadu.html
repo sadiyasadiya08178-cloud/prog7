@@ -1,0 +1,9 @@
+import UIKit
+
+if let url = URL(string: "itms-apps://apps.apple.com/app/idYOUR_APP_ID") {
+    UIApplication.shared.open(url)
+}
+val appId = "com.example.yourapp"
+val url = "https://play.google.com/store/apps/details?id=$appId"
+val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+startActivity(intent)
